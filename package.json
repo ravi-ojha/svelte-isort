@@ -18,12 +18,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivarojha/svelte-isort.git"
+    "url": "git+https://github.com/ravi-ojha/svelte-isort.git"
   },
   "bugs": {
-    "url": "https://github.com/ivarojha/svelte-isort/issues"
+    "url": "https://github.com/ravi-ojha/svelte-isort/issues"
   },
-  "homepage": "https://github.com/ivarojha/svelte-isort#readme",
+  "homepage": "https://github.com/ravi-ojha/svelte-isort#readme",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
