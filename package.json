@@ -14,8 +14,16 @@
     "typescript",
     "javascript"
   ],
-  "author": "Ravi Ojha <ravi@ticketping.com>",
+  "author": "Ravi Ojha <ravi@ticketping.com> (https://npmjs.com/~ivarojha)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivarojha/svelte-isort.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivarojha/svelte-isort/issues"
+  },
+  "homepage": "https://github.com/ivarojha/svelte-isort#readme",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
