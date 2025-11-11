@@ -1,0 +1,14 @@
+# Source files
+src/
+examples/
+prettier-plugin-sort-imports-main/
+
+# Config files
+tsconfig.json
+.prettierrc
+.gitignore
+
+# Development
+*.log
+.DS_Store
+

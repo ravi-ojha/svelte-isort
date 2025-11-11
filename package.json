@@ -1,0 +1,46 @@
+{
+  "name": "prettier-plugin-svelte-isort",
+  "version": "1.0.0",
+  "description": "A prettier plugin dedicated to sorting imports in Svelte files",
+  "main": "lib/index.js",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "prettier",
+    "plugin",
+    "sort",
+    "import",
+    "svelte",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Ravi Ojha <ravi@ticketping.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "node --experimental-vm-modules node_modules/.bin/prettier --config .prettierrc examples/*.svelte",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.0",
+    "svelte": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.7",
+    "@types/node": "^22.0.0",
+    "prettier": "^3.4.0",
+    "prettier-plugin-svelte": "^3.3.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "prettier": "3.x",
+    "prettier-plugin-svelte": "3.x",
+    "svelte": "4.x || 5.x"
+  },
+  "engines": {
+    "node": ">= 18"
+  }
+}
