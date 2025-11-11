@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-svelte-isort",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A prettier plugin dedicated to sorting imports in Svelte files",
   "main": "lib/index.js",
   "type": "module",
