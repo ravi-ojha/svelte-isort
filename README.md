@@ -49,7 +49,7 @@ Add the plugin to your `.prettierrc`:
 {
   "plugins": ["prettier-plugin-svelte", "prettier-plugin-svelte-isort"],
   "importOrder": [
-    "^svelte",
+    "^svelte(/|$)",
     "^@sveltejs/(.*)$",
     "^[a-z]",
     "^@core/(.*)$",
@@ -79,7 +79,7 @@ The `importOrder` array uses regex patterns to group imports:
 
 | Pattern | Matches | Example |
 |---------|---------|---------|
-| `^svelte` | Svelte core | `import { onMount } from 'svelte'` |
+| `^svelte(/|$)` | Svelte core | `import { onMount } from 'svelte'` |
 | `^@sveltejs/` | SvelteKit | `import { page } from '@sveltejs/kit'` |
 | `^[a-z]` | npm packages | `import axios from 'axios'` |
 | `^@/` | Absolute imports | `import { utils } from '@/lib/utils'` |
@@ -92,7 +92,7 @@ The `importOrder` array uses regex patterns to group imports:
 ```json
 {
   "importOrder": [
-    "^svelte",           // Svelte core imports
+    "^svelte(/|$)",      // Svelte core imports
     "^@sveltejs/",       // SvelteKit imports
     "^[a-z]",            // Third-party packages
     "^@/",               // Absolute imports with @
