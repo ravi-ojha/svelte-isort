@@ -25,7 +25,7 @@ When publishing a new version:
    
 3. Push changes and tags:
    ```bash
-   git push && git push --tags
+   git push origin master && git push --tags
    ```
 
 4. Publish to npm:
