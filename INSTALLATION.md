@@ -162,7 +162,7 @@ Your imports should now be sorted! 🎉
 
 ## Step 5 (Optional): Editor Integration
 
-### VS Code
+### VS Code / Cursor
 
 1. Install the [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
@@ -177,6 +177,8 @@ Your imports should now be sorted! 🎉
   }
 }
 ```
+
+3. Restart VS Code / Cursor and then try to edit and save a file.
 
 ### WebStorm/IntelliJ IDEA
 
