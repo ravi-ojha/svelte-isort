@@ -132,7 +132,7 @@ type: 'instance'
 ]
 ```
 
-**Step 3 - Assign Groups (with config: ["^svelte(/|$)", "^[a-z]", "^[./]"]):**
+**Step 3 - Assign Groups (with config: ["^svelte(/|$)", "^@?[a-z]", "^[./]"]):**
 ```javascript
 [
   { text: "import { onMount } from 'svelte'", order: 0 },

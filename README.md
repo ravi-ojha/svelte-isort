@@ -10,15 +10,18 @@ While there are other import sorting plugins available, they often have issues w
 
 This plugin focuses **exclusively on Svelte** to provide the best possible experience.
 
+## Example
+
+See how it transforms messy imports into clean, organized groups:
+
+![Before and After Example](./example_before_after.png)
+
 ## Features
 
-✅ **Svelte-First Design** - Built specifically for Svelte files  
-✅ **Module Context Support** - Properly handles both `<script>` and `<script context="module">`  
-✅ **Comment Preservation** - Keeps your import comments intact  
-✅ **TypeScript Support** - Works with TypeScript in Svelte files  
-✅ **Configurable Grouping** - Define custom import order with regex patterns  
-✅ **Specifier Sorting** - Optionally sort named imports alphabetically  
-✅ **Clean Output** - No extra newlines or formatting issues
+✅ Configurable grouping with regex patterns  
+✅ Preserves comments and formatting  
+✅ TypeScript support  
+✅ Handles both `<script>` and `<script context="module">` blocks  
 
 ## Installation
 
@@ -51,7 +54,7 @@ Add the plugin to your `.prettierrc`:
   "importOrder": [
     "^svelte(/|$)",
     "^@sveltejs/(.*)$",
-    "^[a-z]",
+    "^@?[a-z]",
     "^@core/(.*)$",
     "^@ui/(.*)$",
     "^[./]"
@@ -81,7 +84,7 @@ The `importOrder` array uses regex patterns to group imports:
 |---------|---------|---------|
 | `^svelte(/|$)` | Svelte core | `import { onMount } from 'svelte'` |
 | `^@sveltejs/` | SvelteKit | `import { page } from '@sveltejs/kit'` |
-| `^[a-z]` | npm packages | `import axios from 'axios'` |
+| `^@?[a-z]` | npm packages | `import axios from 'axios'` |
 | `^@/` | Absolute imports | `import { utils } from '@/lib/utils'` |
 | `^[./]` | Relative imports | `import './styles.css'` |
 
@@ -94,7 +97,7 @@ The `importOrder` array uses regex patterns to group imports:
   "importOrder": [
     "^svelte(/|$)",      // Svelte core imports
     "^@sveltejs/",       // SvelteKit imports
-    "^[a-z]",            // Third-party packages
+    "^@?[a-z]",            // Third-party packages
     "^@/",               // Absolute imports with @
     "^[./]"              // Relative imports
   ]

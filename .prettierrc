@@ -10,7 +10,7 @@
   "importOrder": [
     "^svelte",
     "^@sveltejs/(.*)$",
-    "^[a-z]",
+    "^@?[a-z]",
     "^@core/(.*)$",
     "^@server/(.*)$",
     "^@ui/(.*)$",
