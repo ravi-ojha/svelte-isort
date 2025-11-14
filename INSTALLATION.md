@@ -61,7 +61,7 @@ The `importOrder` array uses regex patterns to group imports:
 
 | Pattern | Matches | Example |
 |---------|---------|---------|
-| `^svelte(/|$)` | Svelte core | `import { onMount } from 'svelte'` |
+| `^svelte(/\|$)` | Svelte core | `import { onMount } from 'svelte'` |
 | `^@sveltejs/` | SvelteKit | `import { page } from '@sveltejs/kit'` |
 | `^@?[a-z]` | npm packages | `import axios from 'axios'` |
 | `^\\$app` | $app imports | `import { utils } from '$app/state'` |

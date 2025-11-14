@@ -82,7 +82,7 @@ The `importOrder` array uses regex patterns to group imports:
 
 | Pattern | Matches | Example |
 |---------|---------|---------|
-| `^svelte(/|$)` | Svelte core | `import { onMount } from 'svelte'` |
+| `^svelte(/\|$)` | Svelte core | `import { onMount } from 'svelte'` |
 | `^@sveltejs/` | SvelteKit | `import { page } from '@sveltejs/kit'` |
 | `^@?[a-z]` | npm packages | `import axios from 'axios'` |
 | `^@/` | Absolute imports | `import { utils } from '@/lib/utils'` |
@@ -92,7 +92,7 @@ The `importOrder` array uses regex patterns to group imports:
 **Default:** `['^[./]']` (all imports)
 
 **Example:**
-```json
+```js
 {
   "importOrder": [
     "^svelte(/|$)",      // Svelte core imports
